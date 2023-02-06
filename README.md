@@ -6,7 +6,7 @@ One-shot federated conformal prediction.
 
 ## Container
 
-The reposity contains codes for FedCP-QQ, and FedCP$^2$-QQ.
+The reposity contains codes for FedCP-QQ, and FedCP^2-QQ (DP version).
 
 ## Requirements
 
