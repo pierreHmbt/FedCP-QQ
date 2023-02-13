@@ -2,7 +2,7 @@
 
 Code of the method Federated Conformal Prediction with Quantile-of-Quantiles (FedCP-QQ) used in :
 
-[One-shot federated conformal prediction.](https://batistelb.github.io/files/CP_QQ_FL.pdf)
+[One-shot federated conformal prediction.](https://hal.science/hal-03981605v1/file/main.pdf)
 
 ## Container
 
