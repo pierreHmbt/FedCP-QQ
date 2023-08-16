@@ -7,10 +7,3 @@ Code of the method Federated Conformal Prediction with Quantile-of-Quantiles (Fe
 ## Container
 
 The reposity contains codes for FedCP-QQ, and FedCP^2-QQ (DP version).
-
-## Requirements
-
-This code runs on Python >= 3.5. Set up environment with:
-```
-pip install -r requirements.txt
-```
