@@ -1,62 +1,6 @@
 import numpy as np
 from scipy.stats import binom
 import scipy.special as sc
-
-class Boucle:
-    def __init__(self, i0, it):
-        self.i0 = i0
-        self.it = it
-        self.reset()
-
-    def reset(self):
-        self.ic = self.i0.copy()
-        l = len(self.ic) - 1
-        self.ic[l] = self.i0[l] - 1
-
-    def next(self):
-        der = len(self.ic) - 1
-        for i in reversed(range(len(self.ic))):
-            self.ic[i] += 1
-            if (self.ic[i] <= self.it[i]):
-                break
-            self.ic[i] = self.i0[i]
-        return self.ic
-    
-    def hasNext(self):
-        n = 0
-        for i in range(len(self.ic)):
-            if (self.ic[i] == self.it[i]):
-                n += 1
-        return n != len(self.ic)
-
-
-class Multi_Boucle:
-    def __init__(self, i0, it):
-        self.i0 = i0
-        self.it = it
-        
-        self.reset()
-
-    def reset(self):
-        self.ic = self.i0.copy()
-        l = len(self.ic) - 1
-        self.ic[l] = self.i0[l] - 1
-
-    def next(self):
-        for i in reversed(range(len(self.ic))):
-            self.ic[i] += 1
-            if (self.ic[i] <= self.it[i]):
-                break
-            else:
-                self.ic[i] = self.i0[i]
-        return self.ic
-    
-    def hasNext(self):
-        n = 0
-        for i in range(len(self.ic)):
-            if (self.ic[i] == self.it[i]):
-                n += 1
-        return n != len(self.ic)
     
 def sum_hypergeo(aa, bb, n, t, epsi=0):
     m = len(aa)
